@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: 'sity_sokol',
+    path: '/',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
