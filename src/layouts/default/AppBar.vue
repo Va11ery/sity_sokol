@@ -1,5 +1,5 @@
 <template>
- <v-app-bar :elevation="0">
+ <v-app-bar :elevation="0"  color="info" >
  <v-avatar
               size="65px"
             >
@@ -15,11 +15,7 @@
             </v-app-bar-title>
   <template v-slot:append>
 
-    <v-btn icon="mdi-magnify"></v-btn>
-     <v-btn
-        :prepend-icon="store.$state.theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-        @click="store.setTheme()"
-      >Toggle Theme</v-btn>
+     <v-app-bar-nav-icon></v-app-bar-nav-icon>
   </template>
 </v-app-bar>
 </template>

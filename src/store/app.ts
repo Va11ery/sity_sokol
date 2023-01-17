@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 export const useAppStore = defineStore('app', {
   state: () => ({
     //
-    theme: 'dark'
+    theme: 'light'
   }),
   actions: {
     setTheme() {
