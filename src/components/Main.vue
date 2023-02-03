@@ -26,8 +26,8 @@
       </div>
       <v-row no-gutters>
         <v-col
-          v-for="i in cards"
-          :key="i"
+          v-for="(i,index) in cards"
+          :key="index"
           cols="6"
           sm="4"
 
