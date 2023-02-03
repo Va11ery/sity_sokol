@@ -2,7 +2,7 @@
 
   <v-app-bar :elevation="0" color="#3C435C" class="text-white">
 
-    <div v-ripple class="d-flex" style="cursor:pointer;" @click.prevent="$router.push({name: 'home'})">
+    <div v-ripple class="d-flex" style="cursor:pointer;">
       <v-avatar size="65px">
         <v-img alt="Avatar" src="@/assets/logo.png"></v-img>
       </v-avatar>
