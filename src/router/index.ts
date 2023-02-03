@@ -7,12 +7,12 @@ const routes = [
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
-        path: '',
+        path: '/sity_sokol/',
         name: 'home',
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
       {
-        path: 'about',
+        path: '/sity_sokol/about',
         name: 'about',
         component: () => import(/* webpackChunkName: "home" */ '@/views/AboutCompany.vue'),
       },
