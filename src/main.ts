@@ -14,7 +14,7 @@ import { createApp } from 'vue'
 import { registerPlugins } from '@/plugins'
 
 const app = createApp(App)
-
+import naive from 'naive-ui'
 registerPlugins(app)
-
+app.use(naive)
 app.mount('#app')

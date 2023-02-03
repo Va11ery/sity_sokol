@@ -1,14 +1,14 @@
 // Utilities
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useAppStore = defineStore('app', {
+export const useAppStore = defineStore("app", {
   state: () => ({
     //
-    theme: 'light'
+    theme: "light",
   }),
   actions: {
     setTheme() {
-      this.theme = this.theme === 'light' ? 'dark' : 'light'
-    }
-  }
-})
+      this.theme = this.theme === "light" ? "dark" : "light";
+    },
+  },
+});

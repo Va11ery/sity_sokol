@@ -1,28 +1,73 @@
 <template>
- <v-app-bar :elevation="0"  color="info" >
- <v-avatar
-              size="65px"
-            >
-              <v-img
 
-                alt="Avatar"
-                src="@/assets/logo.png"
-              ></v-img>
+  <v-app-bar :elevation="0" color="#3C435C" class="text-white">
 
-            </v-avatar>
-            <v-app-bar-title>
-              ОО Сокол
-            </v-app-bar-title>
-  <template v-slot:append>
+    <div v-ripple class="d-flex" style="cursor:pointer;" @click.prevent="$router.push({name: 'home'})">
+      <v-avatar size="65px">
+        <v-img alt="Avatar" src="@/assets/logo.png"></v-img>
+      </v-avatar>
+      <v-app-bar-title class="app-bar-title d-flex align-center">
+        <div>ОО Сокол</div>
+      </v-app-bar-title
+      >
+    </div>
 
-     <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  </template>
-</v-app-bar>
+    <template v-slot:append>
+      <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :value="item"
+          link
+          :to="item.link"
+        >
+          <!--        <template v-slot:prepend>-->
+          <!--          <v-icon :icon="item.icon"></v-icon>-->
+          <!--        </template>-->
+
+          <v-list-item-title v-text="item.text"></v-list-item-title>
+        </v-list-item>
+      </v-list>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    </template>
+
+  </v-app-bar>
+
 </template>
 
 <script lang="ts" setup>
+import {ref} from "vue";
+import {useAppStore} from "@/store/app";
 
-import { ref } from 'vue'
- import { useAppStore } from '@/store/app'
- const store = useAppStore()
+const store = useAppStore();
+const items = [
+  {text: 'О компании', icon: 'mdi-clock', link: 'about'},
+  {text: 'Услуги', icon: 'mdi-account', link: 'service'},
+  {text: 'Клиенты', icon: 'mdi-flag', link: 'clients'},
+  {text: 'Команда', icon: 'mdi-flag', link: 'teams'},
+  {text: 'Контакты', icon: 'mdi-flag', link: 'contacts'},
+
+]
 </script>
+
+<style lang="scss">
+
+
+.app-bar-title {
+  div {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    width: max-content;
+    max-width: 100%;
+    background: linear-gradient(
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+</style>
