@@ -13,21 +13,21 @@
     </div>
 
     <template v-slot:append>
-      <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :value="item"
-          link
-          :to="item.link"
-        >
-          <!--        <template v-slot:prepend>-->
-          <!--          <v-icon :icon="item.icon"></v-icon>-->
-          <!--        </template>-->
+<!--      <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">-->
+<!--        <v-list-item-->
+<!--          v-for="(item, i) in items"-->
+<!--          :key="i"-->
+<!--          :value="item"-->
+<!--          link-->
+<!--          :to="item.link"-->
+<!--        >-->
+<!--          &lt;!&ndash;        <template v-slot:prepend>&ndash;&gt;-->
+<!--          &lt;!&ndash;          <v-icon :icon="item.icon"></v-icon>&ndash;&gt;-->
+<!--          &lt;!&ndash;        </template>&ndash;&gt;-->
 
-          <v-list-item-title v-text="item.text"></v-list-item-title>
-        </v-list-item>
-      </v-list>
+<!--          <v-list-item-title v-text="item.text"></v-list-item-title>-->
+<!--        </v-list-item>-->
+<!--      </v-list>-->
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
 

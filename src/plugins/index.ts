@@ -12,11 +12,12 @@ import router from '../router'
 
 // Types
 import type { App } from 'vue'
-
+import naive from 'naive-ui'
 export function registerPlugins (app: App) {
   loadFonts()
   app
     .use(vuetify)
+    .use(naive)
     .use(router)
     .use(pinia)
 }
