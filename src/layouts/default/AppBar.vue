@@ -16,11 +16,10 @@
 
     <template v-slot:append>
       <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
-        <v-list-item
+        <v-btn
           class="ms-1"
           v-for="(item, i) in items"
           :key="i"
-          :value="item"
           link
           :to="{ name: item.link }"
           rounded
@@ -30,7 +29,7 @@
           <!--        </template>-->
 
           <v-list-item-title v-text="item.text"></v-list-item-title>
-        </v-list-item>
+        </v-btn>
       </v-list>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
