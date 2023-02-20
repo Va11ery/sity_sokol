@@ -1,11 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import AboutCompany from "../views/AboutCompany.vue";
-import ServiceCompany from "../views/ServiceCompany.vue";
-import ClientsCompany from "../views/ClientsCompany.vue";
-import TeamsCompany from "../views/TeamsCompany.vue";
-import Contacts from "../views/Contacts.vue";
 const routes = [
   {
     path: "/sity_sokol/",
@@ -14,32 +9,37 @@ const routes = [
       {
         path: "",
         name: "home",
-        component: () => Home,
+        component: () => import(/* webpackChunkName: "home" */ Home),
       },
       {
         path: "about",
         name: "about",
-        component: () => AboutCompany,
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/AboutCompany.vue"),
       },
       {
         path: "service",
         name: "service",
-        component: () => ServiceCompany,
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/ServiceCompany.vue"),
       },
       {
         path: "clients",
         name: "clients",
-        component: () => ClientsCompany,
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/ClientsCompany.vue"),
       },
       {
         path: "teams",
         name: "teams",
-        component: () => TeamsCompany,
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/TeamsCompany.vue"),
       },
       {
         path: "contacts",
         name: "contacts",
-        component: () => Contacts,
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/Contacts.vue"),
       },
     ],
   },
