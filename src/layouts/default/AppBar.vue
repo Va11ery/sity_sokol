@@ -1,28 +1,26 @@
 <template>
+
   <v-app-bar :elevation="0" color="#3C435C" class="text-white">
-    <div
-      v-ripple
-      class="d-flex"
-      style="cursor: pointer"
-      @click.prevent="$router.push({ name: 'home' })"
-    >
+
+    <div v-ripple class="d-flex" style="cursor:pointer;" @click.prevent="$router.push({name: 'home'})">
       <v-avatar size="65px">
         <v-img alt="Avatar" src="@/assets/logo.png"></v-img>
       </v-avatar>
       <v-app-bar-title class="app-bar-title d-flex align-center">
         <div>ОО Сокол</div>
-      </v-app-bar-title>
+      </v-app-bar-title
+      >
     </div>
 
     <template v-slot:append>
       <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
         <v-list-item
-          class="ms-1"
+        class="ms-1"
           v-for="(item, i) in items"
           :key="i"
           :value="item"
-          @click.prevent="$router.push({ name: item.link })"
           link
+          :to="{name: item.link}"
           rounded
         >
           <!--        <template v-slot:prepend>-->
@@ -34,24 +32,29 @@
       </v-list>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
+
   </v-app-bar>
+
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import { useAppStore } from "@/store/app";
+import {ref} from "vue";
+import {useAppStore} from "@/store/app";
 
 const store = useAppStore();
 const items = [
-  { text: "О компании", icon: "mdi-clock", link: "about" },
-  { text: "Услуги", icon: "mdi-account", link: "service" },
-  { text: "Клиенты", icon: "mdi-flag", link: "clients" },
-  { text: "Команда", icon: "mdi-flag", link: "teams" },
-  { text: "Контакты", icon: "mdi-flag", link: "contacts" },
-];
+  {text: 'О компании', icon: 'mdi-clock', link: 'about'},
+  {text: 'Услуги', icon: 'mdi-account', link: 'service'},
+  {text: 'Клиенты', icon: 'mdi-flag', link: 'clients'},
+  {text: 'Команда', icon: 'mdi-flag', link: 'teams'},
+  {text: 'Контакты', icon: 'mdi-flag', link: 'contacts'},
+
+]
 </script>
 
 <style lang="scss">
+
+
 .app-bar-title {
   div {
     font-family: "Space Grotesk", sans-serif;
@@ -61,9 +64,9 @@ const items = [
     width: max-content;
     max-width: 100%;
     background: linear-gradient(
-      121.57deg,
-      #ffffff 18.77%,
-      rgba(255, 255, 255, 0.66) 60.15%
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
