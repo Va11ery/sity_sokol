@@ -1,6 +1,6 @@
 <template>
   <div style="background: #F5F5F5">
-    <v-container class="fill-height container">
+    <v-container class="fill-height container" >
       <div>
         <div class="title ptb-100">
           <div style="color:
