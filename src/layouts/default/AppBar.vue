@@ -16,12 +16,13 @@
 
     <template v-slot:append>
       <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
-        <v-btn
+        <v-list-item
           class="ms-1"
           v-for="(item, i) in items"
           :key="i"
+          :value="item"
+          @click.prevent="$router.push({ name: item.link })"
           link
-          :to="{ name: item.link }"
           rounded
         >
           <!--        <template v-slot:prepend>-->
@@ -29,7 +30,7 @@
           <!--        </template>-->
 
           <v-list-item-title v-text="item.text"></v-list-item-title>
-        </v-btn>
+        </v-list-item>
       </v-list>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template>
