@@ -10,7 +10,7 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   base: '/sity_sokol/',
   plugins: [
-    vue({ 
+    vue({
       template: { transformAssetUrls }
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
