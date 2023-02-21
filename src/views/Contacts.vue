@@ -1,10 +1,10 @@
 <template>
-  <v-container class="fill-height container">
+  <div class="fill-height container">
     <div class="title-3vw  ptb-100">Контакты</div>
 
 
 
-  </v-container>
+  </div>
 </template>
 
 <script lang="ts" setup>

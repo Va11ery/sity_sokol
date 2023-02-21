@@ -1,6 +1,6 @@
 <template>
   <div style="background: #3C435C">
-    <v-container class="fill-height container">
+    <div class="fill-height container">
       <div class="title-3vw  ptb-100 text-white" > О компании</div>
 
 
@@ -20,7 +20,7 @@
       </n-image-group>
 
 
-    </v-container>
+    </div>
   </div>
 </template>
 
