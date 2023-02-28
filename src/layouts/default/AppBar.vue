@@ -23,7 +23,6 @@
           :value="item"
           link
           rounded
-          :to="{ name: item.link }"
         >
           <!--        <template v-slot:prepend>-->
           <!--          <v-icon :icon="item.icon"></v-icon>-->

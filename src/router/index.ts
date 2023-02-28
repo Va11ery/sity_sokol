@@ -2,7 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
-    path: '',
+    path: '/sity_sokol/',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
@@ -40,7 +40,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/sity_sokol/'),
+  history: createWebHistory(),
   routes,
 
 
