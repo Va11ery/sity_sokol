@@ -145,6 +145,7 @@
 </template>
 
 <script lang="ts" setup>
+import { YandexMap, YandexMarker } from 'vue-yandex-maps'
 import CardImg from "../assets/cards_img_3.svg";
 import Camera2 from "../assets/camera_2.jpg";
 import fon from "../assets/fon.jpg";
