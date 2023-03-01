@@ -160,7 +160,7 @@ import CardImg from "../assets/cards_img_3.svg";
 import Camera2 from "../assets/camera_2.jpg";
 import fon from "../assets/fon.jpg";
 import delko from "../assets/delko.png";
-const coordinates = [59.952628, 30.445917];
+const coordinates = [59.877543, 30.335739];
 const controls = ["fullscreenControl"];
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const cards = [
