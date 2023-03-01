@@ -149,7 +149,6 @@ import CardImg from "../assets/cards_img_3.svg";
 import Camera2 from "../assets/camera_2.jpg";
 import fon from "../assets/fon.jpg";
 import delko from "../assets/delko.png";
-import { yandexMap, yandexMarker } from "vue-yandex-maps";
 const coordinates = [59.952628, 30.445917];
 const controls = ["fullscreenControl"];
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
