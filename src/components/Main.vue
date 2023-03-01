@@ -133,6 +133,14 @@
             </v-carousel>
           </v-col>
         </v-row>
+        <div class="company__title ptb-100">Лицензии</div>
+
+        <n-image-group>
+          <n-space>
+            <n-image width="500" :src="Lic_1" />
+            <n-image width="500" :src="Lic_2" />
+          </n-space>
+        </n-image-group>
       </div>
     </div>
 
@@ -145,7 +153,9 @@
 </template>
 
 <script lang="ts" setup>
-import { YandexMap, YandexMarker } from 'vue-yandex-maps'
+import Lic_1 from "@/assets/lic_1.png";
+import Lic_2 from "@/assets/lic_2.png";
+import { YandexMap, YandexMarker } from "vue-yandex-maps";
 import CardImg from "../assets/cards_img_3.svg";
 import Camera2 from "../assets/camera_2.jpg";
 import fon from "../assets/fon.jpg";
