@@ -43,6 +43,10 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/:catchAll(.*)*",
+    component: () => import("@/views/PageError.vue"),
+  },
 ];
 
 const router = createRouter({
