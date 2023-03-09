@@ -30,7 +30,7 @@
         <v-row no-gutters>
           <v-col v-for="(i, index) in cards" :key="index" cols="6" sm="4">
             <v-card class="ma-5" max-width="400">
-              <v-card-title>{{ i.title }}</v-card-title>
+              <v-card-title class="text-wrap">{{ i.title }}</v-card-title>
               <v-card-text>
                 {{ i.text }}
               </v-card-text>

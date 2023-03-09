@@ -3,10 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/sity_sokol/',
+    redirect: '/sity_sokol/home',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
-        path: '',
+        path: 'home',
         name: 'home',
         component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
       },
