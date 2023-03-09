@@ -26,7 +26,7 @@
 
     <div style="background: #3c435c; padding-bottom: 100px">
       <div class="fill-height container">
-        <div class="why-me ptb-100" style="color: #ffff">Наши услуги</div>
+        <div class="why-me ptb-100 text-center" style="color: #ffff">Наши услуги</div>
         <v-row no-gutters>
           <v-col v-for="(i, index) in cards" :key="index" cols="6" sm="4">
             <v-card class="ma-5" max-width="400">
@@ -42,7 +42,7 @@
 
     <div style="background: #f5f5f5">
       <div class="fill-height container">
-        <div class="why-me ptb-100">О нас</div>
+        <div class="why-me ptb-100 text-center">О нас</div>
         <div style="padding-bottom: 100px" class="why-me__title">
           Мы оказываем высококлассные охранные услуги вот уже более 10 лет и
           среди наших постоянных клиентов есть сетевые магазины, филиалы
@@ -86,7 +86,7 @@
       <div class="fill-height container">
         <v-row no-gutters>
           <v-col>
-            <div class="company__title">Партнеры</div>
+            <div class="company__title pl-1">Партнеры</div>
             <div class="pl-2 mt-4">С какими компаниями мы работаем</div>
             <v-btn color="error" size="x-large" class="mt-6"
               >Оставить заявку</v-btn
@@ -133,10 +133,9 @@
             </v-carousel>
           </v-col>
         </v-row>
-        <div class="company__title ptb-100">Лицензии</div>
-
+        <div class="company__title ptb-100 pl-1 text-center">Лицензии</div>
         <n-image-group>
-          <n-space>
+          <n-space justify="center">
             <n-image width="500" :src="Lic_1" />
             <n-image width="500" :src="Lic_2" />
           </n-space>

@@ -23,24 +23,23 @@
           :value="item"
           link
           rounded
+          :to="{name: item.link}"
         >
           <!--        <template v-slot:prepend>-->
           <!--          <v-icon :icon="item.icon"></v-icon>-->
           <!--        </template>-->
 
-          <v-list-item-title v-text="item.text"></v-list-item-title>
+          <v-list-item-title >{{ item.text }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
     </template>
   </v-app-bar>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import { useAppStore } from "@/store/app";
 
-const store = useAppStore();
+
 const items = [
   { text: "О компании", icon: "mdi-clock", link: "about" },
   { text: "Услуги", icon: "mdi-account", link: "service" },
