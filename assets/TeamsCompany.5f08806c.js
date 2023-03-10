@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{z as t,C as s,J as o}from"./index.5b58ed34.js";const c={},a={class:"fill-height container"},n=o("div",{class:"title-3vw ptb-100"}," \u041A\u043E\u043C\u0430\u043D\u0434\u0430",-1),r=[n];function _(i,d){return t(),s("div",a,r)}const m=e(c,[["render",_]]);export{m as default};
