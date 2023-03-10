@@ -12,6 +12,7 @@ import router from "../router";
 
 // Types
 import type { App } from "vue";
+
 import YmapPlugin from "vue-yandex-maps";
 const settings = {
   apiKey: "23323365-4ff9-4242-9f6f-3313554c730e", // Индивидуальный ключ API
@@ -22,5 +23,5 @@ const settings = {
 };
 export function registerPlugins(app: App) {
   loadFonts();
-  app.use(naive).use(router).use(YmapPlugin, settings).use(pinia);
+  app.use(vuetify).use(router).use(YmapPlugin, settings).use(pinia);
 }
