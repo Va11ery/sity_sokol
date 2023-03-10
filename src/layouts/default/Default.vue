@@ -1,11 +1,11 @@
 <template>
-  <v-app :theme="store.$state.theme">
-    <default-bar  />
+  <v-layout>
+    <default-bar />
 
     <default-view />
 
-    <Footer  />
-  </v-app>
+    <Footer />
+  </v-layout>
 </template>
 
 <script lang="ts" setup>
@@ -16,7 +16,4 @@ import { useAppStore } from "@/store/app";
 const store = useAppStore();
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>
