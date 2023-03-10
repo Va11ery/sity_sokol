@@ -70,7 +70,7 @@
               </v-card>
 
               <v-card max-width="400" class="d-flex flex-column align-center">
-                <v-icon style="font-size: 200px" icon="mdi-domain"></v-icon>
+                <v-icon style="font-size: 200px" icon="domain"></v-icon>
                 <v-card-text class="why-me__text"> 20 </v-card-text>
                 <v-card-actions>
                   <v-btn>Компаний на обслуживании</v-btn>

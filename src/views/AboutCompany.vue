@@ -25,6 +25,7 @@
 </template>
 
 <script lang="ts" setup>
+import {NImageGroup, NSpace, NImage} from 'naive-ui'
 import Lic_1 from '@/assets/lic_1.png'
 import Lic_2 from '@/assets/lic_2.png'
 </script>
